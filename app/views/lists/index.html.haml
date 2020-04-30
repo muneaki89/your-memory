@@ -1,2 +1,57 @@
-%h1 Lists#index
-%p Find me in app/views/lists/index.html.haml
+.main
+  .left
+    %h3.header
+      muneaki
+      %ul.header__lists
+        %li.list
+          = link_to "#" do
+            = icon('fas', 'cog', class: 'icon')
+
+      %ul.header__lists
+        %li.list
+          = link_to "#" do
+            = icon('fas', 'edit', class: 'icon')
+          %end
+      
+    .category
+      .category
+        all
+      .category_1
+        ビジネス書
+      .category_2
+        小説
+      .category_3
+        映画
+      .category_4
+        書道
+
+  .center
+    %h3.header
+      want to do
+    .memory
+      .memory_1
+        □　メモの魔力      2020/5/15
+      .memory_2
+        □　output 大全    2020/5/28
+      
+      -# .memory{data: {memory: {id: memory.id}}}
+      -#   .upper-
+      -#     .upper-message__user-name
+      -#       = message.user.name
+      -#     .upper-message__date
+      -#       = message.created_at.strftime("%Y/%m/%d %H:%M")
+      -#   .lower-message
+      -#     - if message.content.present?
+      -#       %p.lower-message__content
+      -#         = message.content
+      -#     = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
+          
+  .right 
+    %h3.right__header
+      done
+    .right__memory
+      .text-memory
+        ☑︎　転職の思考法
+        //.memory{data: {memory: {id: memory.id}}}
+      .date-memory
+        2020/4/24
