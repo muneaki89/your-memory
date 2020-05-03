@@ -15,5 +15,7 @@ module YourMemory
       g.helper false
       g.test_framework false
     end
+    ##言語設定を変更
+    config.i18n.default_locale = :ja
   end
 end
