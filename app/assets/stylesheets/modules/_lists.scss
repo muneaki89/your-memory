@@ -4,89 +4,52 @@
 .main {
   height: 5000px;
   display: flex;
-  border-radius: 66px;
-  border: 1px solid rgb(243, 229, 229);
+  //border-radius: 66px;
+  //border: 1px solid rgb(243, 229, 229);
   
   h3 {
     padding: 0 20px;
     text-align: center;
     line-height: 64px;
     border-bottom: 1px solid rgb(0, 255, 242);
-
-
   }
-  .left {
-    width: 20%;
-    * {
-  box-sizing: border-box;
-}
-.main {
-  height: 5000px;
-  display: flex;
-  border-radius: 66px;
-  border: 1px solid rgb(243, 229, 229);
-  background-color:  rgb(130, 140, 255);
-  
-  h3 {
+  ul {
     padding: 0 20px;
-    text-align: center;
     line-height: 64px;
-    border-bottom: 1px solid rgb(0, 255, 242);
-
-
   }
   .left {
     width: 20%;
-    
-    border: 1px solid rgb(243, 229, 229);
+    //background-color:  rgb(255, 247, 142);
+    border: 1px solid rgb(0, 255, 242);
     .header {
-
+      display: flex;
     }
     .category {
-      background-color:  rgb(255, 247, 142);
+      padding: 0 20px;
+      line-height: 64px;
+      
     }
-    
-    
   }
+
   .center {
     width: 40%;
-    background-color: rgb(255, 253, 160);
-    border: 1px solid rgb(243, 229, 229);
+    //background-color: rgb(255, 253, 160);
+    border: 1px solid rgb(0, 255, 242);
+    line-height: 64px;
   }
+
   .right {
     width: 40%;
-    background-color: rgb(255, 250, 180);
+    //background-color: rgb(255, 250, 180);
+    border: 1px solid rgb(0, 255, 242);
     &__header {
       border-bottom: 1px solid rgb(0, 255, 242);
+      text-align: center;
+      display: flex;
     }
     &__memory {
       display: flex;
-    }
-  }
-}
-    border: 1px solid rgb(243, 229, 229);
-    .header {
-
-    }
-    .category {
-      background-color:  rgb(255, 247, 142);
-    }
-    
-    
-  }
-  .center {
-    width: 40%;
-    background-color: rgb(255, 253, 160);
-    border: 1px solid rgb(243, 229, 229);
-  }
-  .right {
-    width: 40%;
-    background-color: rgb(255, 250, 180);
-    &__header {
-      border-bottom: 1px solid rgb(0, 255, 242);
-    }
-    &__memory {
-      display: flex;
+      line-height: 64px;
     }
   }
 }

@@ -2,19 +2,19 @@
   .left
     %h3.header
       = current_user.name
-      %ul.header__lists
-        %li.list
+      .header__lists
+        .list
           = link_to "#" do
             = icon('fas', 'pen-square', class: 'icon')
 
-      %ul.header__lists
-        %li.list
+      .header__lists
+        .list
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog', class: 'icon')
 
             
-    .category
-      .category
+    %ul.category
+      .category_0
         all
       .category_1
         ビジネス書
@@ -28,11 +28,11 @@
   .center
     %h3.header
       want to do
-    .memory
+    %ul.memory
       .memory_1
-        □　メモの魔力      2020/5/15
+        □  メモの魔力      2020/5/15
       .memory_2
-        □　output 大全    2020/5/28
+        □  output 大全    2020/5/28
       
       -# .memory{data: {memory: {id: memory.id}}}
       -#   .upper-
@@ -49,7 +49,10 @@
   .right 
     %h3.right__header
       done
-    .right__memory
+      .right__header__edit
+        = link_to "#" do
+          = icon('fas', 'square', class: 'edit')
+    %ul.right__memory
       .text-memory
         ☑︎　転職の思考法
         //.memory{data: {memory: {id: memory.id}}}
